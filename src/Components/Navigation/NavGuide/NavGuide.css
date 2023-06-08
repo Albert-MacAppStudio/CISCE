@@ -1,0 +1,25 @@
+.nav-guide {
+  position: relative;
+}
+
+.nav-guide-active {
+  color: var(--clr-white);
+}
+
+.sidebar .sidebar-nav-link-segment-body .nav-guide-active:hover {
+  background-color: var(--clr-dark-blue);
+}
+.nav-guide-active::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0px;
+  background-color: var(--clr-crystal-blue);
+}
+
+.nav-guide svg {
+  height: 8px;
+  width: 8px;
+}

@@ -1,0 +1,92 @@
+.tfoot-left,
+.tfoot,
+.tfoot-btns {
+  display: flex;
+  align-items: center;
+}
+
+.tfoot {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  font-size: var(--fs-sm);
+  padding-bottom: 0.3em;
+  gap: 15px;
+  color: var(--clr-grey-200);
+}
+
+.tfoot-left {
+  gap: 15px;
+}
+
+.tfoot-select {
+  border: 1px solid var(--clr-silver);
+  background-color: transparent;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  color: var(--clr-black);
+}
+
+.tfoot-btns {
+  gap: 10px;
+}
+
+.tfoot-btns button {
+  border: none;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tfoot-btns button svg {
+  height: 12px;
+  width: 12px;
+}
+.tfoot p span {
+  border: 1px solid var(--clr-silver);
+  padding: 0.5em 0.8em;
+  display: inline-block;
+  margin-right: 0.3em;
+  width: 40px;
+  color: var(--clr-black);
+}
+
+.tfoot-btns .t-arrow-btn:first-child,
+.tfoot-btns #arrow-btn-left {
+  transform: rotate(180deg);
+}
+
+.tfoot-btns .form-text-input-box {
+  width: 45px;
+  font-size: inherit;
+}
+
+.tfoot-btns .form-text-input {
+  padding: 7px 0;
+}
+
+@media (max-width: 660px) {
+  .tfoot {
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--fs-x-sm);
+  }
+  .tfoot-btns .form-text-input {
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .tfoot {
+    position: unset;
+    font-size: var(--fs-xx-sm);
+    margin-top: 1em;
+    gap: 10px;
+  }
+  .tfoot-left,
+  .tfoot-btns {
+    gap: 2vw;
+  }
+}

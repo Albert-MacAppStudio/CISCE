@@ -1,0 +1,33 @@
+.sidebar .nav-link {
+  padding: 0;
+}
+
+.sidebar .nav-link a {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.sidebar .nav-link a:active {
+  opacity: 0.3;
+}
+
+.sidebar-nav-link-segment-body > li.nav-link a.active {
+  color: var(--clr-white);
+  background-color: var(--clr-blue-grey);
+}
+
+.sidebar-nav-link-segment-body > ul li.nav-link a.active {
+  color: var(--clr-white);
+}
+.sidebar-nav-link-segment-body > ul li.nav-link a.active::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 2%;
+  left: 0px;
+  background-color: var(--clr-crystal-blue);
+}

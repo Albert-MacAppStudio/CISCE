@@ -1,0 +1,115 @@
+:root {
+  /* colors ==================================== */
+
+  --clr-white: rgb(255, 255, 255);
+  --clr-white-50: rgba(255, 255, 255, 0.5);
+  --clr-white-52: rgba(255, 255, 255, 0.55);
+  --clr-smoke-white: hsl(216, 33%, 97%);
+
+  --clr-grey-100: rgb(242, 246, 249);
+  --clr-grey-200: rgb(61, 80, 97);
+  --clr-blue-grey: rgb(35, 47, 69);
+  --clr-jet-grey: rgb(107, 115, 128);
+  --clr-mist-grey: rgb(133, 144, 152);
+
+  --clr-silver: rgb(196, 205, 213);
+  --clr-platinum: rgb(222, 229, 234);
+
+  --clr-black: rgb(26, 31, 38);
+  --clr-charcoal-black: rgb(45, 56, 67);
+
+  --clr-crystal-blue: rgb(84, 192, 255);
+  --clr-sea-blue: rgb(26, 115, 232);
+  --clr-dark-blue: rgb(28, 37, 54);
+
+  /* font-size  ==================================== */
+  --fs-xx-sm: 12px;
+  --fs-x-sm: 13px;
+  --fs-sm: 14px;
+  --fs-md: 20px;
+  --fs-lg: 34px;
+
+  /* font-weight =================================== */
+  --fw-semi: 600;
+  --fw-md: 500;
+  --fw-rg: 400;
+  --fw-bd: 700;
+}
+
+/* font ===================================== */
+
+@font-face {
+  font-family: "inter";
+  src: url("./Assets/Font/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+/* reset ==================================== */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: var(--clr-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-grey-100);
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  text-transform: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+/* gloabl ============================== */
+
+svg {
+  display: block;
+  height: 16px;
+  width: 16px;
+}

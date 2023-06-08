@@ -1,0 +1,48 @@
+.topbar,
+.topbar-left,
+.topbar-item-btn {
+  display: flex;
+  align-items: center;
+}
+
+.topbar {
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.topbar-item {
+  position: relative;
+}
+
+.topbar-left {
+  gap: 20px;
+}
+
+.topbar-item-btn {
+  text-transform: capitalize;
+  color: #1a2027;
+  font-size: var(--fs-sm);
+  gap: 10px;
+}
+.topbar-item-btn svg:last-child {
+  transform: rotate(90deg);
+  width: 10px;
+  height: 10px;
+}
+
+.topbar-menu {
+  position: absolute;
+  padding: 24px;
+  background-color: var(--clr-white);
+  top: 35px;
+  right: 0;
+  width: 246px;
+  z-index: 50;
+  border-radius: 8px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.topbar-menu ul {
+  padding-left: 0;
+  margin: 0;
+}

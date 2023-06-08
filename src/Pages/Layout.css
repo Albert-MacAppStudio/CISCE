@@ -1,0 +1,28 @@
+.app-container {
+  display: flex;
+}
+.content {
+  width: calc(100% - 300px);
+  transition: width 300ms ease;
+  margin-left: auto;
+  position: relative;
+}
+
+.main-container {
+  width: calc(100% - 3em);
+  margin: 0 auto;
+  padding: 2em 0 1em;
+}
+.main-container > button {
+  display: none;
+}
+@media (max-width: 1250px) {
+  .content {
+    width: 100%;
+  }
+
+  .main-container > button {
+    margin: 10px 0;
+    display: block;
+  }
+}

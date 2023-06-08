@@ -1,0 +1,9 @@
+.bread-crumb {
+  font-size: var(--fs-xx-sm);
+  color: var(--clr-jet-grey);
+  text-transform: capitalize;
+}
+
+.bread-crumb span {
+  margin: 0px;
+}

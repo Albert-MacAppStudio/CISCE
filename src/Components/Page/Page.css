@@ -1,0 +1,24 @@
+.page {
+  min-height: 91vh;
+  position: relative;
+  transition: min-height 300ms linear;
+}
+
+.page-title {
+  margin: 4px 0 8px;
+  font-size: var(--fs-lg);
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+/* @media (max-width: 1250px) {
+  .page {
+    padding: 0em 0 2em;
+  }
+} */
+
+@media (max-width: 450px) {
+  .page-title {
+    font-size: var(--fs-md);
+  }
+}

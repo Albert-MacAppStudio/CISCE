@@ -1,0 +1,121 @@
+.filter {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fade-in 350ms ease;
+}
+
+.filter-content {
+  width: 390px;
+  margin-left: auto;
+  padding: 0 2em;
+  background-color: #fff;
+  color: var(--clr-black);
+  text-transform: capitalize;
+  animation: enter-left ease 300ms;
+}
+
+.filter-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 0 3vh;
+}
+
+.filter-content-header button {
+  transform: rotate(45deg);
+}
+.filter-content-header button svg {
+  color: #ff4444;
+}
+.filter-content-header h2 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semi);
+}
+
+.filter-content-main {
+  height: 75vh;
+  overflow-y: auto;
+  gap: 30px;
+}
+
+.filter-content-footer {
+  height: 15vh;
+  border-top: 1px solid rgba(224, 224, 224);
+  padding: 0.7em 0;
+}
+
+.filter-content-footer button {
+  padding: 1em 1em;
+  border-radius: 5px;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bd);
+  width: 100%;
+  cursor: pointer;
+}
+
+.filter-content-footer button:first-child {
+  background-color: var(--clr-sea-blue);
+  color: var(--clr-white);
+  margin-bottom: 10px;
+}
+
+.filter-content-footer button:last-child {
+  background-color: var(--clr-white);
+  color: var(--clr-sea-blue);
+  border: 2px solid var(--clr-sea-blue);
+}
+
+@media (max-width: 660px) {
+  .filter-content-main {
+    height: 70vh;
+  }
+  .filter-content-footer {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .filter-content-main {
+    height: 55vh;
+  }
+  .filter-content {
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    animation: enter-bottom ease 300ms;
+  }
+  .filter {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes enter-left {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes enter-bottom {
+  0% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}

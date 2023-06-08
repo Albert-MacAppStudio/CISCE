@@ -1,0 +1,32 @@
+.column {
+  text-transform: uppercase;
+  font-size: var(--fs-xx-sm);
+  font-weight: var(--fw-md);
+  padding: 1em;
+  color: var(--clr-charcoal-black);
+  cursor: default;
+  display: flex;
+  align-items: center;
+}
+
+.column button {
+  border-radius: 50%;
+  padding: 0em 0.1em;
+  background-color: transparent;
+  border: none;
+  margin-left: 0.3em;
+}
+
+.column .btn-reverse {
+  transform: rotate(180deg) !important ;
+}
+.column .arrow-icon {
+  display: block;
+  cursor: pointer;
+  color: rgb(48, 48, 48);
+}
+
+.column .arrow-icon-disabled {
+  cursor: pointer;
+  color: rgb(176, 175, 175);
+}

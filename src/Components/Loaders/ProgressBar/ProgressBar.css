@@ -1,0 +1,17 @@
+progress {
+  height: 25px;
+  transition: all 5ms ease;
+}
+
+.progress-bar {
+  margin: auto;
+  width: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.progress-bar p {
+  font-size: var(--fs-x-sm);
+  color: var(--clr-grey-200);
+  text-align: center;
+}
